@@ -1,4 +1,4 @@
-import { Container, Nav, Navbar, NavDropdown } from "react-bootstrap";
+import { Container, Nav, Navbar } from "react-bootstrap";
 import { useNavigate } from "react-router-dom";
 
 export const AppNavbar = () => {
@@ -14,7 +14,7 @@ export const AppNavbar = () => {
             <Nav.Link onClick={() => navigate('/')}>Home</Nav.Link>
             <Nav.Link onClick={() => navigate('/about')}>About</Nav.Link>
             <Nav.Link onClick={() => navigate('/projects')}>Projects</Nav.Link>
-            <NavDropdown title="Dropdown" id="basic-nav-dropdown">
+            {/* <NavDropdown title="Dropdown" id="basic-nav-dropdown">
               <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
               <NavDropdown.Item href="#action/3.2">
                 Another action
@@ -24,7 +24,7 @@ export const AppNavbar = () => {
               <NavDropdown.Item href="#action/3.4">
                 Separated link
               </NavDropdown.Item>
-            </NavDropdown>
+            </NavDropdown> */}
           </Nav>
         </Navbar.Collapse>
       </Container>
