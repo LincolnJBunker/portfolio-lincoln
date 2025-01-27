@@ -7,7 +7,7 @@ export const AppNavbar = () => {
   return (
     <Navbar expand="lg" className="bg-body-tertiary">
       <Container>
-        <Navbar.Brand href="#home">Lincoln Bunker</Navbar.Brand>
+        <Navbar.Brand onClick={() => navigate('/')}>Lincoln Bunker</Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
