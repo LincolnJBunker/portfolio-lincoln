@@ -1,6 +1,8 @@
 import React from "react";
-import { Button } from "react-bootstrap";
+import { Button, Carousel, CarouselItem } from "react-bootstrap";
 import me from "../../public/Portfolio.jpg";
+import wyoming from "../../public/WyomingMe.jpg"
+import family from "../../public/MeAndWifey.jpg"
 
 export const Home = () => {
   return (
@@ -35,7 +37,7 @@ export const Home = () => {
 
         {/* Image Section */}
         <div style={{ flex: 1, textAlign: "center", minWidth: "280px" }}>
-          <img
+          {/* <img
             src={me}
             alt="Image of Lincoln Bunker"
             style={{
@@ -43,7 +45,42 @@ export const Home = () => {
               maxWidth: "500px",
               borderRadius: "10px",
             }}
-          />
+          /> */}
+          <Carousel>
+            <CarouselItem>
+            <img
+                src={me}
+                alt="Image of Lincoln Bunker"
+                style={{
+                width: "100%",
+                maxWidth: "500px",
+                borderRadius: "10px",
+                }}
+            />
+            </CarouselItem>
+            <CarouselItem>
+            <img
+                src={family}
+                alt="Image of Lincoln and Kylie"
+                style={{
+                width: "100%",
+                maxWidth: "500px",
+                borderRadius: "10px",
+                }}
+            />
+            </CarouselItem>
+            <CarouselItem>
+            <img
+                src={wyoming}
+                alt="Image of Lincoln Bunker in the Tetons"
+                style={{
+                width: "100%",
+                maxWidth: "500px",
+                borderRadius: "10px",
+                }}
+            />
+            </CarouselItem>
+          </Carousel>
         </div>
       </div>
     </React.Fragment>
