@@ -23,9 +23,9 @@ export const Home = () => {
           <h5>My name is Lincoln Bunker</h5>
           <h5>Fullstack Software Engineer</h5>
           <h5>
-            I'm a passionate Software Engineer Based in Salt Lake City, currently studying Computer Science.
+            I'm a passionate Software Engineer based in Salt Lake City studying Computer Science.
             Currently, I am working as a Software Engineer at Monolith Brands Group. I have a strong interest
-            in Fullstack software development and backend engineering. I am looking forward to continuing to
+            in Fullstack Software Development and backend engineering. I am looking forward to continuing to
             expand my skills as a Software Engineer!
           </h5>
           <Button
