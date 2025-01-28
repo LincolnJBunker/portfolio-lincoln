@@ -1,6 +1,6 @@
 import React from 'react'
 // import './App.css'
-import { AppRoutes } from './routes'
+// import { AppRoutes } from './routes'
 import { BrowserRouter } from 'react-router-dom'
 import { AppNavbar } from './components/Navbar'
 
@@ -10,7 +10,7 @@ function App() {
     <React.Fragment>
       <BrowserRouter basename="/portfolio-lincoln">
         <AppNavbar />
-        <AppRoutes />
+        {/* <AppRoutes /> */}
       </BrowserRouter>
     </React.Fragment>
   )
