@@ -1,7 +1,7 @@
 import React from "react";
 import { Button, Carousel, CarouselItem } from "react-bootstrap";
 import me from "../../public/Portfolio.jpg";
-import wyoming from "../../public/WyomingMe.jpg"
+// import wyoming from "../../public/WyomingMe.jpg"
 import family from "../../public/MeAndWifey.jpg"
 
 export const Home = () => {
@@ -69,7 +69,7 @@ export const Home = () => {
                 }}
             />
             </CarouselItem>
-            <CarouselItem>
+            {/* <CarouselItem>
             <img
                 src={wyoming}
                 alt="Image of Lincoln Bunker in the Tetons"
@@ -79,7 +79,7 @@ export const Home = () => {
                 borderRadius: "10px",
                 }}
             />
-            </CarouselItem>
+            </CarouselItem> */}
           </Carousel>
         </div>
       </div>
