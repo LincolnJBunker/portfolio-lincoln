@@ -1,10 +1,14 @@
 import React from "react";
 import { Button, Carousel, CarouselItem } from "react-bootstrap";
 import me from "../../public/Portfolio.jpg";
-// import wyoming from "../../public/WyomingMe.jpg"
 import family from "../../public/MeAndWifey.jpg"
 
 export const Home = () => {
+
+    const handleResumeClick = () => {
+        window.open("/portfolio-lincoln/Resume%20-%20Lincoln%20Bunker.pdf", "_blank")
+    }
+    
   return (
     <React.Fragment>
       <div
@@ -30,6 +34,7 @@ export const Home = () => {
           </h5>
           <Button
             style={{ marginTop: 25}}
+            onClick={handleResumeClick}
           >
             Get my resume
         </Button>

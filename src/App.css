@@ -36,13 +36,9 @@
 } */
 
 #root {
-  /* max-width: 1280px; */
-  /* margin: 0 auto; */
-  /* padding: 2rem; */
-  /* text-align: center; */
   background-color: #d0e3ef;
 }
 
 .nav-color {
-  color: #87b2cc
+  color: #87b2cc;
 }
