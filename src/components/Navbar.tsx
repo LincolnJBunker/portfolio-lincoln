@@ -21,17 +21,17 @@ export const AppNavbar = () => {
   return (
     <>
       {/* Navbar */}
-      <Navbar expand="lg" className="bg-body-tertiary sticky-top">
+      <Navbar expand="lg" className="sticky-top" style={{ backgroundColor: '#144361'}}>
         <Container>
-          <Navbar.Brand className="fs-2 fw-bold">Lincoln Bunker</Navbar.Brand>
+          <Navbar.Brand className="fs-2 fw-bold" style={{ color: '#87b2cc'}}>Lincoln Bunker</Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="ms-auto">
-              <Nav.Link onClick={() => handleScroll(aboutRef)} className="fs-6 mx-2">About</Nav.Link>
-              <Nav.Link onClick={() => handleScroll(skillsRef)} className="fs-6 mx-2">Skills</Nav.Link>
-              <Nav.Link onClick={() => handleScroll(projectsRef)} className="fs-6 mx-2">Projects</Nav.Link>
-              <Nav.Link onClick={() => handleScroll(contactRef)} className="fs-6 mx-2">Contact</Nav.Link>
-              <Nav.Link onClick={() => handleScroll(resumeRef)} className="fs-6 mx-2">Resume</Nav.Link>
+              <Nav.Link onClick={() => handleScroll(aboutRef)} className="fs-6 mx-2 nav-color">About</Nav.Link>
+              <Nav.Link onClick={() => handleScroll(skillsRef)} className="fs-6 mx-2 nav-color">Skills</Nav.Link>
+              <Nav.Link onClick={() => handleScroll(projectsRef)} className="fs-6 mx-2 nav-color">Projects</Nav.Link>
+              <Nav.Link onClick={() => handleScroll(contactRef)} className="fs-6 mx-2 nav-color">Contact</Nav.Link>
+              <Nav.Link onClick={() => handleScroll(resumeRef)} className="fs-6 mx-2 nav-color">Resume</Nav.Link>
             </Nav>
           </Navbar.Collapse>
         </Container>
