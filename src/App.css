@@ -42,3 +42,11 @@
 .nav-color {
   color: #87b2cc;
 }
+
+body {
+  font-family: "Funnel Display", serif;
+  font-optical-sizing: auto;
+  /* font-weight: */
+  font-style: normal
+}
+

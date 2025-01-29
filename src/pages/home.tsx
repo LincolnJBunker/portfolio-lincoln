@@ -33,7 +33,7 @@ export const Home = () => {
             expand my skills as a Software Engineer!
           </h5>
           <Button
-            style={{ marginTop: 25}}
+            style={{ marginTop: 25, backgroundColor: '#9de6ba', border: '#48423f', color: 'black'}}
             onClick={handleResumeClick}
           >
             Get my resume
