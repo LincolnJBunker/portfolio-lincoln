@@ -8,7 +8,7 @@ export const Home = () => {
     const handleResumeClick = () => {
         window.open("/portfolio-lincoln/Resume%20-%20Lincoln%20Bunker.pdf", "_blank")
     }
-    
+
   return (
     <React.Fragment>
       <div
@@ -76,7 +76,7 @@ export const Home = () => {
             </CarouselItem>
             {/* <CarouselItem>
             <img
-                src={wyoming}
+                src={costa}
                 alt="Image of Lincoln Bunker in the Tetons"
                 style={{
                 width: "100%",

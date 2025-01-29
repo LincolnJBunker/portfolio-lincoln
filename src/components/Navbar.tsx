@@ -1,6 +1,7 @@
 import { useRef } from "react";
 import { Container, Nav, Navbar } from "react-bootstrap";
 import { Home } from "../pages/home";
+import { About } from "../pages/about";
 
 interface Ref {
   current: any;
@@ -44,8 +45,9 @@ export const AppNavbar = () => {
         </section>
 
         <section ref={aboutRef} style={{ minHeight: "100vh", padding: "20px" }}>
-          <h1>About Me</h1>
-          <p>This is the About section.</p>
+          {/* <h1>About Me</h1>
+          <p>This is the About section.</p> */}
+          <About />
         </section>
 
         <section ref={skillsRef} style={{ minHeight: "100vh", padding: "20px" }}>
