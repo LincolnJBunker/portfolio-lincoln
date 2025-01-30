@@ -17,7 +17,7 @@ export const Home = () => {
           flexWrap: "wrap",
           justifyContent: "space-between",
           alignItems: "center",
-          padding: "20px",
+        //   padding: "20px",
           gap: "20px",
         }}
       >
