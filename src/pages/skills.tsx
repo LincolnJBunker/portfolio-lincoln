@@ -1,4 +1,3 @@
-import React, { DetailedHTMLProps, HTMLAttributes } from "react";
 
 export const Skills = () => {
     const frontend = [
