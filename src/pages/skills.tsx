@@ -27,10 +27,10 @@ export const Skills = () => {
     const tools = [
         "Git",
         "GitHub",
+        "AWS",
         "Postman",
         "Axios",
         "VSCode",
-        "Microsoft Windows",
         "Mac OS",
         "Linux",
     ];
@@ -92,16 +92,16 @@ const styles: any = {
     skillGrid: {
         display: "grid",
         gap: "10px",
-        gridTemplateColumns: "repeat(auto-fit, minmax(120px, 1fr))", // Responsive grid
+        gridTemplateColumns: "repeat(auto-fit, minmax(120px, 1fr))",
         justifyContent: "center",
     },
     skill: {
         padding: "10px 15px",
-        backgroundColor: "#6b9da5", // Muted teal
+        backgroundColor: "#6b9da5",
         borderRadius: "5px",
         textAlign: "center",
         fontSize: "16px",
-        color: "white", // Ensures readability
+        color: "white",
     }
     
 };

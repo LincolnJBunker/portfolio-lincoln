@@ -3,6 +3,7 @@ import { Container, Nav, Navbar } from "react-bootstrap";
 import { Home } from "../pages/home";
 import { About } from "../pages/about";
 import { Skills } from "../pages/skills";
+import { Projects } from "../pages/projects";
 
 interface Ref {
   current: any;
@@ -54,8 +55,7 @@ export const AppNavbar = () => {
         </section>
 
         <section ref={projectsRef} style={{ minHeight: "100vh", padding: "20px" }}>
-          <h1>Projects</h1>
-          <p>This is the Projects section.</p>
+            <Projects />
         </section>
 
         <section ref={contactRef} style={{ minHeight: "100vh", padding: "20px" }}>
