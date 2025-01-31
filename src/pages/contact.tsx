@@ -83,7 +83,7 @@ const styles: any = {
         // fontSize: "1.3rem",
         cursor: "pointer",
         transition: "color 0.3s",
-        padding: "5px 5px",
+        padding: "5px 3px",
         whiteSpace: "nowrap",
     },
 };
