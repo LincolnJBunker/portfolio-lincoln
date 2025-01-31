@@ -56,17 +56,17 @@ const styles: any = {
         margin: "0 auto",
     },
     heading: {
-        fontSize: "2.5rem",
+        // fontSize: "2.5rem",
         marginBottom: "10px",
     },
     subheading: {
-        fontSize: "1.8rem",
+        // fontSize: "1.8rem",
         marginBottom: "10px",
     },
     description: {
         // fontSize: "1.1rem",
         maxWidth: "600px",
-        lineHeight: "1.6",
+        // lineHeight: "1.6",
         marginBottom: "40px",
     },
     linksContainer: {
