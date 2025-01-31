@@ -1,6 +1,7 @@
 import React from "react";
 import Sentinel from '../../public/Sentinel.png'
 import ATPM from '../../public/ATPM.jpeg'
+import NatureNetwork from '../../public/NatureNetwork.jpeg'
 import Huzz from '../../public/HUZZ.png'
 
 export const Projects = () => {
@@ -24,7 +25,7 @@ export const Projects = () => {
             tech: "Javascript, React, React Bootstrap, Node.js, PostgreSQL, Sequelize, NPS API, Google Maps API",
             description: `A group project—a social media app for U.S. National Parks! Users can sign up, connect with friends, and post about park adventures.
             Integrated Google Maps & NPS APIs to display all parks, along with their info and images.`,
-            image: "/images/nature-network.png"
+            image: NatureNetwork
         },
         {
             title: "Huzz Converter",
@@ -45,7 +46,7 @@ export const Projects = () => {
                         <div className="project-details">
                             <h3>{project.title}</h3>
                             <h5 className="project-tech">{project.tech}</h5>
-                            <p>{project.description}</p>
+                            <h5>{project.description}</h5>
                         </div>
                     </div>
                 ))}
