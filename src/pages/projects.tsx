@@ -1,6 +1,6 @@
 import React from "react";
 import Sentinel from '../../public/Sentinel.png'
-import ATPM from '../../public/ATPM.png'
+import ATPM from '../../public/ATPM.jpeg'
 import Huzz from '../../public/HUZZ.png'
 
 export const Projects = () => {
