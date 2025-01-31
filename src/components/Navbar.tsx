@@ -15,10 +15,13 @@ export const AppNavbar = () => {
   const aboutRef = useRef(null);
   const projectsRef = useRef(null);
   const contactRef = useRef(null);
-  const resumeRef = useRef(null);
 
   const handleScroll = (ref: Ref) => {
     ref.current?.scrollIntoView({ behavior: "smooth", block: "start" });
+  };
+
+  const handleResumeClick = () => {
+    window.open("/portfolio-lincoln/Resume%20-%20Lincoln%20Bunker.pdf", "_blank")
   };
 
   return (
@@ -34,7 +37,7 @@ export const AppNavbar = () => {
               <Nav.Link onClick={() => handleScroll(skillsRef)} className="fs-6 mx-2 nav-color">Skills</Nav.Link>
               <Nav.Link onClick={() => handleScroll(projectsRef)} className="fs-6 mx-2 nav-color">Projects</Nav.Link>
               <Nav.Link onClick={() => handleScroll(contactRef)} className="fs-6 mx-2 nav-color">Contact</Nav.Link>
-              <Nav.Link onClick={() => handleScroll(resumeRef)} className="fs-6 mx-2 nav-color">Resume</Nav.Link>
+              <Nav.Link onClick={handleResumeClick} className="fs-6 mx-2 nav-color">Resume</Nav.Link>
             </Nav>
           </Navbar.Collapse>
         </Container>
@@ -61,11 +64,6 @@ export const AppNavbar = () => {
         <section ref={contactRef} style={{ minHeight: "100vh", padding: "20px" }}>
           <h1>Contact</h1>
           <p>This is the Contact section.</p>
-        </section>
-
-        <section ref={resumeRef} style={{ minHeight: "100vh", padding: "20px" }}>
-          <h1>Resume</h1>
-          <p>This is the Resume section.</p>
         </section>
       </div>
     </>
