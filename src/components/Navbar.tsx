@@ -27,6 +27,8 @@ export const AppNavbar = () => {
     window.open("/portfolio-lincoln/Resume%20-%20Lincoln%20Bunker.pdf", "_blank")
   };
 
+
+
   return (
     <>
       {/* Navbar */}
@@ -64,7 +66,7 @@ export const AppNavbar = () => {
             <Projects />
         </section>
 
-        <section ref={contactRef} style={{ minHeight: "100vh", padding: "20px" }}>
+        <section ref={contactRef} style={{ padding: "20px" }}>
             <Contact />
         </section>
       </div>

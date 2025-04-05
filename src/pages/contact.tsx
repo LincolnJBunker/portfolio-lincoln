@@ -2,23 +2,6 @@ import React from "react";
 
 export const Contact = () => {
 
-    const handleEmailClick = () => {
-        window.location.href = "mailto:webdev.lincolnbunker@gmail.com?subject=Let's Connect";
-    };
-    
-
-    const handleGitHubClick = () => {
-        window.open('https://github.com/LincolnJBunker')
-    }
-
-    const handleLinkedInClick = () => {
-        window.open('https://www.linkedin.com/in/lincoln-bunker-9a13302a9/')
-    }
-
-    const handleResumeClick = () => {
-        window.open("/portfolio-lincoln/Resume%20-%20Lincoln%20Bunker.pdf", "_blank")
-    }
-
     return (
         <React.Fragment>
             <div style={{
@@ -30,7 +13,7 @@ export const Contact = () => {
                 gap: "20px", // Match spacing
                 margin: "0 auto", // Center content
                 maxWidth: "800px", // Match width
-                minHeight: "100vh", // Ensure full height
+                // minHeight: "100vh", // Ensure full height
                 justifyContent: "space-between", // Space out content
             }}>
                 <div style={{ flex: 1 }}>
@@ -44,12 +27,6 @@ export const Contact = () => {
                             to reach out via email or LinkedIn. Looking forward to hearing from you!
                         </h3>
                     </div>
-                </div>
-                <div style={styles.linksContainer}>
-                    <h2 onClick={handleEmailClick} style={styles.link}>Email</h2>
-                    <h2 onClick={handleGitHubClick} style={styles.link}>GitHub</h2>
-                    <h2 onClick={handleLinkedInClick} style={styles.link}>LinkedIn</h2>
-                    <h2 onClick={handleResumeClick} style={styles.link}>Resume</h2>
                 </div>
             </div>
         </React.Fragment>
@@ -67,15 +44,14 @@ const styles: any = {
         margin: "0 auto",
     },
     heading: {
-        // fontSize: "2.5rem",
+        fontSize: "2.5rem",
         marginBottom: "10px",
     },
     subheading: {
-        // fontSize: "1.8rem",
+        fontSize: "1.8rem",
         marginBottom: "10px",
     },
     description: {
-        // fontSize: "1.1rem",
         maxWidth: "600px",
         // lineHeight: "1.6",
         marginBottom: "40px",
