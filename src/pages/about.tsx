@@ -9,6 +9,9 @@ export const About = () => {
                     flexDirection: "column",
                     alignItems: "center",
                     padding: "20px",
+                    gap: "20px", // Match spacing
+                    margin: "0 auto", // Center content
+                    maxWidth: "800px", // Match width
                 }}
             >
                 <h1>About Me</h1>
@@ -18,11 +21,8 @@ export const About = () => {
                         justifyContent: "center",
                         gap: "20px",
                         textAlign: "center",
-                        maxWidth: "800px",
-                        width: "100%",
-                        marginTop: "25px",
-                        flexDirection: "row",
                         flexWrap: "wrap",
+                        marginTop: "25px",
                     }}
                 >
                     <div style={styles.section}>

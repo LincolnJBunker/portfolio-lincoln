@@ -10,7 +10,6 @@ function App() {
     <React.Fragment>
       <BrowserRouter basename="/portfolio-lincoln">
         <AppNavbar />
-        {/* <AppRoutes /> */}
       </BrowserRouter>
     </React.Fragment>
   )

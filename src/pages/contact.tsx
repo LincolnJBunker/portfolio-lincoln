@@ -21,19 +21,30 @@ export const Contact = () => {
 
     return (
         <React.Fragment>
-            <div style={styles.container}>
-                <h1 style={styles.heading}>Contact Me</h1>
-
-                <div style={styles.textContainer}>
-                    <h3 style={styles.subheading}>Let's Connect!</h3>
-                    <h3 style={styles.description}>
-                        I'd love to connect and meet! Whether it's about an employment opportunity, 
-                        a project to collaborate on, a tech discussion, CS classes you're taking, 
-                        or even chatting about our favorite ski runs—let's make it happen! Feel free 
-                        to reach out via email or LinkedIn. Looking forward to hearing from you!
-                    </h3>
+            <div style={{
+                display: "flex",
+                flexDirection: "column",
+                alignItems: "center",
+                textAlign: "center",
+                padding: "20px",
+                gap: "20px", // Match spacing
+                margin: "0 auto", // Center content
+                maxWidth: "800px", // Match width
+                minHeight: "100vh", // Ensure full height
+                justifyContent: "space-between", // Space out content
+            }}>
+                <div style={{ flex: 1 }}>
+                    <h1 style={styles.heading}>Contact Me</h1>
+                    <div style={styles.textContainer}>
+                        <h3 style={styles.subheading}>Let's Connect!</h3>
+                        <h3 style={styles.description}>
+                            I'd love to connect and meet! Whether it's about an employment opportunity, 
+                            a project to collaborate on, a tech discussion, CS classes you're taking, 
+                            or even chatting about our favorite ski runs—let's make it happen! Feel free 
+                            to reach out via email or LinkedIn. Looking forward to hearing from you!
+                        </h3>
+                    </div>
                 </div>
-
                 <div style={styles.linksContainer}>
                     <h2 onClick={handleEmailClick} style={styles.link}>Email</h2>
                     <h2 onClick={handleGitHubClick} style={styles.link}>GitHub</h2>

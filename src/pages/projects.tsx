@@ -38,7 +38,12 @@ export const Projects = () => {
 
     return (
         <React.Fragment>
-            <div className="projects-container">
+            <div className="projects-container" style={{
+                padding: "20px",
+                gap: "20px", // Match spacing
+                margin: "0 auto", // Center content
+                maxWidth: "800px", // Match width
+            }}>
                 <h1>Projects</h1>
                 {projects.map((project, index) => (
                     <div key={index} className="project">

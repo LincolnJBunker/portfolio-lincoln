@@ -1,4 +1,3 @@
-
 export const Skills = () => {
     const frontend = [
         "Javascript",
@@ -42,6 +41,9 @@ export const Skills = () => {
                 flexDirection: "column",
                 alignItems: "center",
                 padding: "20px",
+                gap: "20px", // Match spacing
+                margin: "0 auto", // Center content
+                maxWidth: "800px", // Match width
             }}
         >
             <h1 style={{ marginBottom: '25px'}}>Skills</h1>
