@@ -17,10 +17,10 @@ export const Contact = () => {
                 justifyContent: "space-between", // Space out content
             }}>
                 <div style={{ flex: 1 }}>
-                    <h1 style={styles.heading}>Contact Me</h1>
+                    <h1 style={{ fontSize: "2rem" }}>Contact Me</h1>
                     <div style={styles.textContainer}>
-                        <h3 style={styles.subheading}>Let's Connect!</h3>
-                        <h3 style={styles.description}>
+                        <h3 style={{ fontSize: "1.5rem" }}>Let's Connect!</h3>
+                        <h3 style={{ fontSize: "1.25rem" }}>
                             I'd love to connect and meet! Whether it's about an employment opportunity, 
                             a project to collaborate on, a tech discussion, CS classes you're taking, 
                             or even chatting about our favorite ski runs—let's make it happen! Feel free 

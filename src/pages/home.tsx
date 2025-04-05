@@ -23,10 +23,10 @@ export const Home = () => {
       >
         {/* Text Section */}
         <div style={{ flex: 1, marginRight: "20px", minWidth: "280px" }}>
-          <h3>Hey!</h3>
-          <h5>My name is Lincoln Bunker</h5>
-          <h5>Fullstack Software Engineer</h5>
-          <h5>
+          <h3 style={{ fontSize: "2rem" }}>Hey!</h3>
+          <h5 style={{ fontSize: "1.5rem" }}>My name is Lincoln Bunker</h5>
+          <h5 style={{ fontSize: "1.5rem" }}>Fullstack Software Engineer</h5>
+          <h5 style={{ fontSize: "1.25rem" }}>
             I'm a passionate Software Engineer based in Salt Lake City studying Computer Science.
             Currently, I am working as a Software Engineer at Monolith Brands Group. I have a strong interest
             in Fullstack Software Development and backend engineering. I am looking forward to continuing to

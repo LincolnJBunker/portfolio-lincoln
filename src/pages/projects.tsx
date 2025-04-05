@@ -44,17 +44,16 @@ export const Projects = () => {
                 margin: "0 auto", // Center content
                 maxWidth: "800px", // Match width
             }}>
-                <h1>Projects</h1>
+                <h1 style={{ fontSize: "2rem" }}>Projects</h1>
                 {projects.map((project, index) => (
                     <div key={index} className="project">
                         {project.image &&
                         <img src={project.image} alt={project.title} className="project-image" />
-
                         }
                         <div className="project-details">
-                            <h3>{project.title}</h3>
-                            <h5 className="project-tech">{project.tech}</h5>
-                            <h5>{project.description}</h5>
+                            <h3 style={{ fontSize: "1.5rem" }}>{project.title}</h3>
+                            <h5 className="project-tech" style={{ fontSize: "1rem" }}>{project.tech}</h5>
+                            <h5 style={{ fontSize: "1.25rem" }}>{project.description}</h5>
                         </div>
                     </div>
                 ))}

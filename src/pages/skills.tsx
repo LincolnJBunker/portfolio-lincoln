@@ -46,10 +46,10 @@ export const Skills = () => {
                 maxWidth: "800px", // Match width
             }}
         >
-            <h1 style={{ marginBottom: '25px'}}>Skills</h1>
+            <h1 style={{ marginBottom: '25px', fontSize: "2rem" }}>Skills</h1>
             <div style={styles.container}>
                 <div>
-                    <h3>Front End</h3>
+                    <h3 style={{ fontSize: "1.5rem" }}>Front End</h3>
                     <div style={styles.skillGrid}>
                         {frontend.map((skill, index) => (
                             <span key={index} style={styles.skill}>
@@ -59,7 +59,7 @@ export const Skills = () => {
                     </div>
                 </div>
                 <div>
-                    <h3>Back End</h3>
+                    <h3 style={{ fontSize: "1.5rem" }}>Back End</h3>
                     <div style={styles.skillGrid}>
                         {backend.map((skill, index) => (
                             <span key={index} style={styles.skill}>
@@ -69,7 +69,7 @@ export const Skills = () => {
                     </div>
                 </div>
                 <div>
-                    <h3>Tools / Cloud</h3>
+                    <h3 style={{ fontSize: "1.5rem" }}>Tools / Cloud</h3>
                     <div style={styles.skillGrid}>
                         {tools.map((skill, index) => (
                             <span key={index} style={styles.skill}>

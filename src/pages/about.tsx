@@ -14,7 +14,7 @@ export const About = () => {
                     maxWidth: "800px", // Match width
                 }}
             >
-                <h1>About Me</h1>
+                <h1 style={{ fontSize: "2rem" }}>About Me</h1>
                 <div
                     style={{
                         display: "flex",
@@ -26,24 +26,24 @@ export const About = () => {
                     }}
                 >
                     <div style={styles.section}>
-                        <h3>Past</h3>
-                        <h5>
+                        <h3 style={{ fontSize: "1.5rem" }}>Past</h3>
+                        <h5 style={{ fontSize: "1.25rem" }}>
                             Growing up in the Salt Lake area, I have always been a lover of the outdoors. I spent my childhood and teenage years skiing, hiking, mountain biking,
                             and doing anything I could outside. After graduating High School, I served a religous mission in Riverside, California and Córdoba, Argentina. I became and still
                             am fluent in Spanish. My love for tech began at about 20 years old when I took a coding bootcamp - Dev Mountain. There, I found a passion for software engineering.
                         </h5>
                     </div>
                     <div style={styles.section}>
-                        <h3>Present</h3>
-                        <h5>
+                        <h3 style={{ fontSize: "1.5rem" }}>Present</h3>
+                        <h5 style={{ fontSize: "1.25rem" }}>
                             I recently have gotten married, and love spending time with my wife, Kylie. I am finishing up an Associates Degree at Salt Lake Community College, taking various
                             Computer Science classes. I'm currently employed at Monolith Brands Group as a Fullstack Software Engineer. My responsibilites, to name a few, include maintaining previously
                             built software to the company's needs, while developing new software to help various departments of the company.
                         </h5>
                     </div>
                     <div style={styles.section}>
-                        <h3>Future</h3>
-                        <h5>
+                        <h3 style={{ fontSize: "1.5rem" }}>Future</h3>
+                        <h5 style={{ fontSize: "1.25rem" }}>
                             Upon finishing at Salt Lake Community College, I plan on attending Utah Valley University to study Computer Science. I look forward to expanding my experience as a Software Engineer.
                             Constant learning is something that I love and am passionate about. I'm excited to see what my career will entail, the people I will meet, and the projects that I will be able
                             to contribute to in the upcoming years
