@@ -20,6 +20,7 @@ export const Home = () => {
           Passionate software engineer based in Salt Lake City, studying Computer Science
           at Weber State University. Currently a Software Engineer at FoundationSource.
           Strong interest in backend engineering, data pipelines, and clean system design.
+          Bilingual in English and Spanish.
         </p>
 
         <div className="hero-buttons">
