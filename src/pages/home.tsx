@@ -17,9 +17,9 @@ export const Home = () => {
         <h1 className="hero-name">Lincoln Bunker</h1>
         <p className="hero-title">Fullstack Engineer</p>
         <p className="hero-bio">
-          Passionate software engineer based in Salt Lake City, studying Computer Science.
-          Currently building fullstack software at Monolith Brands Group. Strong interest
-          in backend engineering, data pipelines, and clean system design.
+          Passionate software engineer based in Salt Lake City, studying Computer Science
+          at Weber State University. Currently a Software Engineer at FoundationSource.
+          Strong interest in backend engineering, data pipelines, and clean system design.
         </p>
 
         <div className="hero-buttons">
