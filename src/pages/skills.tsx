@@ -1,111 +1,81 @@
+import { ReactNode } from "react";
+import {
+  SiJavascript, SiTypescript, SiReact, SiRedux, SiHtml5, SiCss,
+  SiBootstrap, SiMui, SiPython, SiPostgresql, SiMysql, SiNodedotjs,
+  SiExpress, SiGit, SiGithub, SiPostman, SiLinux, SiAxios, SiGnubash,
+} from "react-icons/si";
+import { FaJava, FaAws, FaApple } from "react-icons/fa";
+import { TbApi } from "react-icons/tb";
+import { MdDataThresholding } from "react-icons/md";
+import { VscCode, VscWorkspaceTrusted } from "react-icons/vsc";
+
+interface Skill {
+  name: string;
+  icon?: ReactNode;
+}
+
+const frontend: Skill[] = [
+  { name: "JavaScript", icon: <SiJavascript /> },
+  { name: "TypeScript", icon: <SiTypescript /> },
+  { name: "React", icon: <SiReact /> },
+  { name: "Redux", icon: <SiRedux /> },
+  { name: "HTML5", icon: <SiHtml5 /> },
+  { name: "CSS3", icon: <SiCss /> },
+  { name: "Bootstrap", icon: <SiBootstrap /> },
+  { name: "Material UI", icon: <SiMui /> },
+];
+
+const backend: Skill[] = [
+  { name: "Python", icon: <SiPython /> },
+  { name: "PostgreSQL", icon: <SiPostgresql /> },
+  { name: "MySQL", icon: <SiMysql /> },
+  { name: "Java", icon: <FaJava /> },
+  { name: "Node.js", icon: <SiNodedotjs /> },
+  { name: "Express", icon: <SiExpress /> },
+  { name: "REST APIs", icon: <TbApi /> },
+  { name: "ETL", icon: <VscWorkspaceTrusted /> },
+  { name: "Data Pipelines", icon: <MdDataThresholding /> },
+  { name: "Bash", icon: <SiGnubash /> },
+];
+
+const tools: Skill[] = [
+  { name: "Git", icon: <SiGit /> },
+  { name: "GitHub", icon: <SiGithub /> },
+  { name: "AWS", icon: <FaAws /> },
+  { name: "Postman", icon: <SiPostman /> },
+  { name: "Axios", icon: <SiAxios /> },
+  { name: "VS Code", icon: <VscCode /> },
+  { name: "macOS", icon: <FaApple /> },
+  { name: "Linux", icon: <SiLinux /> },
+];
+
+const categories = [
+  { label: "Front End", skills: frontend },
+  { label: "Back End", skills: backend },
+  { label: "DevOps & Tools", skills: tools },
+];
+
 export const Skills = () => {
-    const frontend = [
-        "Javascript",
-        "Typescript",
-        "React",
-        "Redux",
-        "HTML",
-        "CSS",
-        "Bootstrap",
-        "Material UI",
-    ];
-
-    const backend = [
-        "Python",
-        "PostgresSQL",
-        "MySQL",
-        "Java",
-        "Node.js",
-        "Express",
-        "REST API",
-        "ETL",
-        "Data Pipelines",
-        "Bash",
-    ];
-
-    const tools = [
-        "Git",
-        "GitHub",
-        "AWS",
-        "Postman",
-        "Axios",
-        "VSCode",
-        "Mac OS",
-        "Linux",
-    ];
-
-    return (
-        <div
-            style={{
-                display: "flex",
-                flexDirection: "column",
-                alignItems: "center",
-                padding: "20px",
-                gap: "20px", // Match spacing
-                margin: "0 auto", // Center content
-                maxWidth: "800px", // Match width
-            }}
-        >
-            <h1 style={{ marginBottom: '25px', fontSize: "2rem" }}>Skills</h1>
-            <div style={styles.container}>
-                <div>
-                    <h3 style={{ fontSize: "1.5rem" }}>Front End</h3>
-                    <div style={styles.skillGrid}>
-                        {frontend.map((skill, index) => (
-                            <span key={index} style={styles.skill}>
-                                {skill}
-                            </span>
-                        ))}
-                    </div>
-                </div>
-                <div>
-                    <h3 style={{ fontSize: "1.5rem" }}>Back End</h3>
-                    <div style={styles.skillGrid}>
-                        {backend.map((skill, index) => (
-                            <span key={index} style={styles.skill}>
-                                {skill}
-                            </span>
-                        ))}
-                    </div>
-                </div>
-                <div>
-                    <h3 style={{ fontSize: "1.5rem" }}>Tools / Cloud</h3>
-                    <div style={styles.skillGrid}>
-                        {tools.map((skill, index) => (
-                            <span key={index} style={styles.skill}>
-                                {skill}
-                            </span>
-                        ))}
-                    </div>
-                </div>
+  return (
+    <div className="section-container">
+      <h2 className="section-title">Skills</h2>
+      <div className="skills-grid-wrapper">
+        {categories.map((cat) => (
+          <div key={cat.label}>
+            <p className="skills-category-title">{cat.label}</p>
+            <div className="skill-grid">
+              {cat.skills.map((skill) => (
+                <span key={skill.name} className="skill-badge">
+                  {skill.icon}
+                  {skill.name}
+                </span>
+              ))}
             </div>
-        </div>
-    );
-};
-
-const styles: any = {
-    container: {
-        display: "flex",
-        flexDirection: "column",
-        gap: "20px",
-        width: "100%",
-        maxWidth: "900px",
-    },
-    skillGrid: {
-        display: "grid",
-        gap: "10px",
-        gridTemplateColumns: "repeat(auto-fit, minmax(120px, 1fr))",
-        justifyContent: "center",
-    },
-    skill: {
-        padding: "10px 15px",
-        backgroundColor: "#6b9da5",
-        borderRadius: "5px",
-        textAlign: "center",
-        fontSize: "16px",
-        color: "white",
-    }
-    
+          </div>
+        ))}
+      </div>
+    </div>
+  );
 };
 
 export default Skills;
