@@ -11,16 +11,18 @@ passion for software engineering.`,
     {
       label: "Present",
       title: "Where I Am",
-      text: `Recently married to my wife Kylie, and finishing an Associate's Degree at Salt Lake Community
-College. I'm currently a Fullstack Software Engineer at Monolith Brands Group, where I maintain and build
-new software for various departments — from admin tooling to data pipelines.`,
+      text: `Married to my wife Kylie, and earned my Associate's Degree in Computer Science from Salt Lake
+Community College in summer 2025. I'm now studying Computer Science at Weber State University, on track
+to graduate summer 2027. Professionally, I'm a Software Engineer at FoundationSource, where I've spent
+the past year building and maintaining software that makes a real impact.`,
     },
     {
       label: "Future",
       title: "Where I'm Headed",
-      text: `I plan to transfer to Utah Valley University to continue studying Computer Science. Constant
-learning is something I'm passionate about. I'm excited to grow as an engineer, meet great people, and
-contribute to meaningful projects in the years ahead.`,
+      text: `I'm focused on finishing my Bachelor's in Computer Science at Weber State (summer 2027) while
+continuing to grow as an engineer at FoundationSource. Constant learning is something I'm passionate
+about — I'm excited to keep building meaningful software and take on more complex engineering challenges
+in the years ahead.`,
     },
   ];
 

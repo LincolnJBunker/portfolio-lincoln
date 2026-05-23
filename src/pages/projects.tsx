@@ -17,7 +17,7 @@ const projects: Project[] = [
     title: "Sentinel",
     tech: ["TypeScript", "React", "MUI", "Python", "PostgreSQL", "AWS", "Serverless"],
     description:
-      "Built at Monolith Brands Group — a real-time Amazon data platform serving all of Monolith's brands. I contributed significantly to v2, shipping admin features for FBM/WFM management, Shopify order tracking, feature flag integrations, and executive reporting.",
+      "Built during my time at Monolith Brands Group — a real-time Amazon data platform serving all of Monolith's brands. I contributed significantly to v2, shipping admin features for FBM/WFM management, Shopify order tracking, feature flag integrations, and executive reporting.",
     badge: "Professional",
   },
   {

@@ -4,7 +4,7 @@ import {
   SiBootstrap, SiMui, SiPython, SiPostgresql, SiMysql, SiNodedotjs,
   SiExpress, SiGit, SiGithub, SiPostman, SiLinux, SiAxios, SiGnubash,
 } from "react-icons/si";
-import { FaJava, FaAws, FaApple } from "react-icons/fa";
+import { FaJava, FaAws, FaApple, FaLanguage } from "react-icons/fa";
 import { TbApi } from "react-icons/tb";
 import { MdDataThresholding } from "react-icons/md";
 import { VscCode, VscWorkspaceTrusted } from "react-icons/vsc";
@@ -49,10 +49,16 @@ const tools: Skill[] = [
   { name: "Linux", icon: <SiLinux /> },
 ];
 
+const languages: Skill[] = [
+  { name: "English", icon: <FaLanguage /> },
+  { name: "Spanish", icon: <FaLanguage /> },
+];
+
 const categories = [
   { label: "Front End", skills: frontend },
   { label: "Back End", skills: backend },
   { label: "DevOps & Tools", skills: tools },
+  { label: "Languages", skills: languages },
 ];
 
 export const Skills = () => {
